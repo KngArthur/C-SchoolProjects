@@ -9,10 +9,6 @@ namespace CustomerData
 {
     public class Customer
     {
-        private int accountNo;
-        private string custName;
-        private string custType;
-        private double charge;
 
         public int AccountNo { get; set; }
 
@@ -22,7 +18,10 @@ namespace CustomerData
 
         public double Charge { get; set; }
 
-
+        private int accountNo;
+        private string custName;
+        private string custType;
+        private double charge;
 
         public Customer(int an = 0, string cn = "unknown", string ct = "unknown", double c = 0)
         {
@@ -30,6 +29,11 @@ namespace CustomerData
             CustName = cn;
             CustType = ct;
             Charge = c;
+        }
+
+        public double ChargeValue()
+        {
+            return charge;
         }
 
         public override string ToString()

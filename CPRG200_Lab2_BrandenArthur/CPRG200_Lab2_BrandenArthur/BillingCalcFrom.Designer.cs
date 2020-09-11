@@ -105,7 +105,6 @@
             this.txbUseage.Name = "txbUseage";
             this.txbUseage.Size = new System.Drawing.Size(83, 26);
             this.txbUseage.TabIndex = 4;
-            this.txbUseage.TextChanged += new System.EventHandler(this.txbUseage_TextChanged);
             // 
             // grbSelection
             // 
@@ -171,7 +170,6 @@
             this.grbRegular.TabIndex = 7;
             this.grbRegular.TabStop = false;
             this.grbRegular.Text = "Please Enter the Kwh Used";
-            this.grbRegular.Enter += new System.EventHandler(this.grbRegular_Enter);
             // 
             // grbIndustrial
             // 
@@ -264,7 +262,6 @@
             this.txbCustomerName.Name = "txbCustomerName";
             this.txbCustomerName.Size = new System.Drawing.Size(218, 26);
             this.txbCustomerName.TabIndex = 1;
-            this.txbCustomerName.TextChanged += new System.EventHandler(this.txbCustomerName_TextChanged);
             // 
             // label3
             // 
@@ -284,7 +281,6 @@
             this.txbAccountNum.Name = "txbAccountNum";
             this.txbAccountNum.Size = new System.Drawing.Size(218, 26);
             this.txbAccountNum.TabIndex = 0;
-            this.txbAccountNum.TextChanged += new System.EventHandler(this.txbAccountNum_TextChanged);
             // 
             // label4
             // 
@@ -412,7 +408,6 @@
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.lstCustomers);
-            this.Controls.Add(this.grbIndustrial);
             this.Controls.Add(this.txbCost);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.grbRegular);
@@ -420,6 +415,7 @@
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnClear);
             this.Controls.Add(this.btnCalculate);
+            this.Controls.Add(this.grbIndustrial);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "frmCustomers";
